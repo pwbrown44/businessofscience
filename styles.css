@@ -218,24 +218,34 @@ p { margin: 0; }
 .packages {
   display: grid;
   grid-template-columns: 1.35fr 1fr;
-  gap: var(--s6);
-  align-items: start;
+  gap: 0;
+  align-items: stretch;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
 }
 .package {
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--line);
+  border-radius: 0;
+  border: none;
   overflow: hidden;
   background: var(--bg);
+}
+.package--bos {
+  background: var(--bos-soft);
+  border-right: 3px solid var(--bos-border);
+}
+.package--bio {
+  background: var(--bio-soft);
 }
 
 /* Package headers */
 .package-header { padding: var(--s5) var(--s6); }
 .package--bos .package-header {
-  background: var(--bos-soft);
+  background: #dbeafe;
   border-bottom: 2px solid var(--bos-border);
 }
 .package--bio .package-header {
-  background: var(--bio-soft);
+  background: #dcfce7;
   border-bottom: 2px solid var(--bio-border);
 }
 .package-title {
@@ -265,6 +275,8 @@ p { margin: 0; }
   border-bottom: 1px solid var(--line);
 }
 .domain-row:last-child { border-bottom: none; }
+.package--bos .domain-row { border-bottom-color: #bfdbfe; }
+.package--bio .domain-row { border-bottom-color: #bbf7d0; }
 .domain-row-main {
   display: flex;
   align-items: baseline;
@@ -311,6 +323,8 @@ p { margin: 0; }
   border-top: 2px solid var(--line);
   background: var(--bg-2);
 }
+.package--bos .package-footer { background: #dbeafe; border-top-color: var(--bos-border); }
+.package--bio .package-footer { background: #dcfce7; border-top-color: var(--bio-border); }
 .bundle-row {
   display: flex;
   align-items: center;
@@ -349,6 +363,13 @@ p { margin: 0; }
   flex-wrap: wrap;
 }
 .portfolio-total-left { flex: 1; min-width: 0; }
+.portfolio-total-title {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 var(--s2);
+  letter-spacing: -0.01em;
+}
 .portfolio-total .bundle-label { color: rgba(255,255,255,0.75); margin-bottom: var(--s2); }
 .portfolio-total-note { font-size: var(--text-sm); color: rgba(255,255,255,0.9); line-height: 1.4; }
 .portfolio-total-btn {
@@ -501,7 +522,8 @@ p { margin: 0; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
-  .packages { grid-template-columns: 1fr; }
+  .packages { grid-template-columns: 1fr; border-radius: var(--radius-lg); }
+  .package--bos { border-right: none; border-bottom: 3px solid var(--bos-border); }
   .steps { grid-template-columns: repeat(2, 1fr); }
   .contact-card { grid-template-columns: 1fr; padding: var(--s6); gap: var(--s6); }
 }
