@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>business-of-science · Premium domain portfolio for sale</title>
+    <meta
+      name="description"
+      content="A four-domain brandable portfolio: businessofscience.com, business-of-science.com, businessofscience.io, and business-of-science.io. Available individually or as a complete set."
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=satoshi@400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Sale strip */
+      .sale-strip {
+        background: var(--accent-ink);
+        color: var(--paper);
+        padding: var(--space-3) 0;
+      }
+      .sale-strip-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--space-4);
+        flex-wrap: wrap;
+      }
+      .sale-pill {
+        display: inline-block;
+        background: rgba(247, 244, 236, 0.15);
+        border: 1px solid rgba(247, 244, 236, 0.3);
+        padding: 2px 10px;
+        border-radius: 999px;
+        font-size: var(--text-xs);
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-right: var(--space-3);
+      }
+      .sale-strip-left {
+        display: flex;
+        align-items: center;
+        font-size: var(--text-sm);
+      }
+      .sale-strip-timer {
+        display: flex;
+        align-items: center;
+        gap: var(--space-2);
+      }
+      .timer-label {
+        color: rgba(247, 244, 236, 0.7);
+        font-size: var(--text-xs);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+      .timer-display {
+        font-family: var(--font-display);
+        font-size: var(--text-xl);
+        font-weight: 500;
+        letter-spacing: 0.05em;
+      }
+      .sale-strip-cta {
+        background: var(--paper);
+        color: var(--ink);
+        border: 1px solid var(--paper);
+        border-radius: var(--radius);
+        font-size: var(--text-xs);
+        font-weight: 500;
+        padding: var(--space-2) var(--space-4);
+        text-decoration: none;
+        white-space: nowrap;
+        transition: background 0.18s ease, color 0.18s ease;
+      }
+      .sale-strip-cta:hover {
+        background: var(--accent-soft);
+        border-color: var(--accent-soft);
+        color: var(--accent-ink);
+      }
+      /* Price stack in domain cards */
+      .price-stack {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1px;
+      }
+      .meta-price-orig {
+        font-family: var(--font-display);
+        font-size: var(--text-sm);
+        color: var(--muted);
+        text-decoration: line-through;
+        letter-spacing: -0.01em;
+      }
+      .meta-price.sale-price {
+        color: var(--accent-ink);
+      }
+      /* Bundle sale note */
+      .bundle-sale-note {
+        font-size: var(--text-sm);
+        color: rgba(247, 244, 236, 0.6);
+        margin: calc(-1 * var(--space-2)) 0 var(--space-4);
+      }
+      @media (max-width: 600px) {
+        .sale-strip-inner {
+          justify-content: center;
+          text-align: center;
+        }
+        .sale-strip-timer {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- SALE STRIP -->
+    <div class="sale-strip">
+      <div class="container sale-strip-inner">
+        <div class="sale-strip-left">
+          <span class="sale-pill">24-Hour Sale</span>
+          <span>Complete 4-domain bundle &mdash; <strong>$20,000</strong></span>
+        </div>
+        <div class="sale-strip-timer">
+          <span class="timer-label">Ends in&nbsp;</span>
+          <span class="timer-display" id="sale-countdown">24:00:00</span>
+        </div>
+        <a class="sale-strip-cta" href="#contact">Claim this price &rarr;</a>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#" aria-label="business-of-science portfolio">
+          <svg
+            class="logo-mark"
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            aria-hidden="true"
+          >
+            <circle
+              cx="14"
+              cy="14"
+              r="12.5"
+              stroke="currentColor"
+              stroke-width="1.25"
+            />
+            <path
+              d="M5 14 H23"
+              stroke="currentColor"
+              stroke-width="1.25"
+              stroke-linecap="round"
+            />
+            <circle cx="14" cy="9" r="2" fill="currentColor" />
+            <circle cx="14" cy="19" r="2" fill="currentColor" />
+          </svg>
+          <span class="logo-word">business-of-science</span>
+        </a>
+        <a class="nav-cta" href="#contact">Claim 24-hour pricing</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container">
+          <p class="eyebrow">Premium domain portfolio &middot; 24-Hour Sale</p>
+          <h1 class="hero-title">
+            Where the <em>business</em> of science<br />finds its name.
+          </h1>
+          <p class="hero-lede">
+            A complete four-domain brand asset spanning <strong>.com</strong>
+            and <strong>.io</strong>, hyphenated and clean. Built for the
+            company, fund, publication, or platform working at the intersection
+            of commerce and discovery.
+          </p>
+          <div class="hero-cta-row">
+            <a class="btn btn-primary" href="#contact">Claim 24-hour pricing</a>
+            <a class="btn btn-ghost" href="#portfolio">View the portfolio</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-eyebrow">The portfolio</p>
+            <h2 class="section-title">Four domains. One brand surface.</h2>
+            <p class="section-lede">
+              Acquire individually or as a complete set. The bundle gives you
+              full coverage across both extensions and both spellings &mdash; so
+              nobody else can build the adjacent brand.
+            </p>
+          </div>
+
+          <div class="domain-grid">
+            <!-- FLAGSHIP -->
+            <article class="domain-card domain-card--featured">
+              <div class="badge">Flagship</div>
+              <h3 class="domain-name">businessofscience<span class="tld">.com</span></h3>
+              <p class="domain-desc">
+                The clean, unhyphenated .com. Type-in friendly, voice-search
+                friendly, the natural primary brand URL.
+              </p>
+              <div class="domain-meta">
+                <span class="meta-label">24-hr sale</span>
+                <div class="price-stack">
+                  <span class="meta-price-orig">$12,500</span>
+                  <span class="meta-price sale-price">$9,995</span>
+                </div>
+              </div>
+              <a class="domain-cta" href="#contact">Inquire about this domain &rarr;</a>
+            </article>
+
+            <!-- HYPHENATED COM -->
+            <article class="domain-card">
+              <h3 class="domain-name">business-of-science<span class="tld">.com</span></h3>
+              <p class="domain-desc">
+                The readable, SEO-friendly .com. Each word is a clean keyword
+                signal &mdash; search engines and skim-readers both win.
+              </p>
+              <div class="domain-meta">
+                <span class="meta-label">24-hr sale</span>
+                <div class="price-stack">
+                  <span class="meta-price-orig">$4,995</span>
+                  <span class="meta-price sale-price">$3,495</span>
+                </div>
+              </div>
+              <a class="domain-cta" href="#contact">Inquire about this domain &rarr;</a>
+            </article>
+
+            <!-- IO CLEAN -->
+            <article class="domain-card">
+              <h3 class="domain-name">businessofscience<span class="tld">.io</span></h3>
+              <p class="domain-desc">
+                The .io variant for the technical audience &mdash; labs, platforms,
+                developer-facing science tools.
+              </p>
+              <div class="domain-meta">
+                <span class="meta-label">24-hr sale</span>
+                <div class="price-stack">
+                  <span class="meta-price-orig">$2,495</span>
+                  <span class="meta-price sale-price">$1,795</span>
+                </div>
+              </div>
+              <a class="domain-cta" href="#contact">Inquire about this domain &rarr;</a>
+            </article>
+
+            <!-- IO HYPHENATED -->
+            <article class="domain-card">
+              <h3 class="domain-name">business-of-science<span class="tld">.io</span></h3>
+              <p class="domain-desc">
+                The hyphenated .io &mdash; a defensive add-on or a standalone for
+                technical projects that prefer separated keywords.
+              </p>
+              <div class="domain-meta">
+                <span class="meta-label">24-hr sale</span>
+                <div class="price-stack">
+                  <span class="meta-price-orig">$1,295</span>
+                  <span class="meta-price sale-price">$895</span>
+                </div>
+              </div>
+              <a class="domain-cta" href="#contact">Inquire about this domain &rarr;</a>
+            </article>
+          </div>
+
+          <!-- BUNDLE -->
+          <div class="bundle">
+            <div class="bundle-content">
+              <p class="bundle-eyebrow">Complete brand acquisition &middot; 24-hour only</p>
+              <h3 class="bundle-title">All four domains &middot; $20,000</h3>
+              <p class="bundle-sale-note">One-time bundle price &middot; expires when the timer ends</p>
+              <p class="bundle-lede">
+                Complete extension and spelling coverage means no competitor
+                can build the adjacent brand later. Lock in the entire surface
+                in one transaction &mdash; one price, one close, one Escrow.com
+                transfer.
+              </p>
+              <a class="btn btn-primary" href="#contact">Claim the bundle</a>
+            </div>
+            <div class="bundle-list" aria-hidden="true">
+              <div>businessofscience.com</div>
+              <div>business-of-science.com</div>
+              <div>businessofscience.io</div>
+              <div>business-of-science.io</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHO BUYS THIS -->
+      <section class="audience">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-eyebrow">Who this is for</p>
+            <h2 class="section-title">A name with built-in meaning.</h2>
+          </div>
+          <div class="audience-grid">
+            <div class="audience-card">
+              <h3>Translational research platforms</h3>
+              <p>
+                Companies bridging laboratory discovery and commercial
+                application &mdash; drug development, biotech tooling, research
+                infrastructure.
+              </p>
+            </div>
+            <div class="audience-card">
+              <h3>Science-focused investment funds</h3>
+              <p>
+                Venture capital, family offices, and angel groups deploying
+                capital into life sciences, deep tech, and emerging research.
+              </p>
+            </div>
+            <div class="audience-card">
+              <h3>Publications &amp; media</h3>
+              <p>
+                Newsletters, journals, podcasts, and editorial properties
+                covering the economics and practice of scientific discovery.
+              </p>
+            </div>
+            <div class="audience-card">
+              <h3>Education &amp; training</h3>
+              <p>
+                Programs teaching commercialization, IP strategy, research
+                management, and the operational side of working in science.
+              </p>
+            </div>
+            <div class="audience-card">
+              <h3>Conferences &amp; communities</h3>
+              <p>
+                Events and membership organizations connecting researchers,
+                operators, and capital around science-driven commerce.
+              </p>
+            </div>
+            <div class="audience-card">
+              <h3>Strategic brand defense</h3>
+              <p>
+                Existing companies operating near this naming territory who
+                want to lock down adjacent variants before competitors do.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="process">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-eyebrow">How acquisition works</p>
+            <h2 class="section-title">Direct, secure, no broker.</h2>
+            <p class="section-lede">
+              Every transaction runs through Escrow.com &mdash; the industry standard
+              for domain transfers. Buyer typically covers the escrow fee.
+              Closing usually completes in five to seven business days.
+            </p>
+          </div>
+          <ol class="process-list">
+            <li>
+              <span class="step-num">01</span>
+              <div>
+                <h3>Inquire or accept the listed price</h3>
+                <p>
+                  Use the contact form below. Buy-now prices are firm but I
+                  consider serious offers on individual domains.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="step-num">02</span>
+              <div>
+                <h3>Open Escrow.com transaction</h3>
+                <p>
+                  I send a transaction link. Buyer wires or charges the agreed
+                  amount to Escrow.com &mdash; funds held safely until the domain
+                  transfers.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="step-num">03</span>
+              <div>
+                <h3>Domain transfer &amp; verification</h3>
+                <p>
+                  I push the domain to your registrar with the auth code.
+                  Escrow.com verifies the new ownership in WHOIS.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="step-num">04</span>
+              <div>
+                <h3>Funds release</h3>
+                <p>
+                  Once Escrow.com confirms the transfer, funds release to me
+                  and the transaction closes. Done.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="contact-card">
+            <div class="contact-copy">
+              <p class="section-eyebrow">Claim 24-hour pricing &middot; Ask a question</p>
+              <h2 class="section-title">Let's talk.</h2>
+              <p>
+                Send a note with the domain (or bundle) you're interested in,
+                your offer if you have one, and a brief sense of how you'd use
+                the name. I reply within one business day.
+              </p>
+              <ul class="contact-list">
+                <li>
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:hi.its.show.time@gmail.com">hi.its.show.time@gmail.com</a>
+                </li>
+                <li>
+                  <span class="contact-label">Escrow</span>
+                  <a href="https://www.escrow.com/domains" target="_blank" rel="noopener">Escrow.com &mdash; how it works</a>
+                </li>
+                <li>
+                  <span class="contact-label">Response</span>
+                  <span>Within 1 business day</span>
+                </li>
+              </ul>
+            </div>
+            <form
+              class="contact-form"
+              action="mailto:hi.its.show.time@gmail.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <label>
+                <span>Your name</span>
+                <input type="text" name="name" required autocomplete="name" />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" required autocomplete="email" />
+              </label>
+              <label>
+                <span>Domain(s) of interest</span>
+                <select name="domain" required>
+                  <option value="">Select&hellip;</option>
+                  <option>All four &mdash; bundle $20,000</option>
+                  <option>businessofscience.com &mdash; $9,995</option>
+                  <option>business-of-science.com &mdash; $3,495</option>
+                  <option>businessofscience.io &mdash; $1,795</option>
+                  <option>business-of-science.io &mdash; $895</option>
+                  <option>The two .com domains</option>
+                  <option>Other / custom combination</option>
+                </select>
+              </label>
+              <label>
+                <span>Your offer (optional)</span>
+                <input type="text" name="offer" placeholder="$ amount or 'asking price'" />
+              </label>
+              <label>
+                <span>How you'd use the name</span>
+                <textarea name="message" rows="3" required></textarea>
+              </label>
+              <button type="submit" class="btn btn-primary btn-block">
+                Send inquiry
+              </button>
+              <p class="form-fineprint">
+                Submits via your email client. Or just email
+                <a href="mailto:hi.its.show.time@gmail.com">hi.its.show.time@gmail.com</a>
+                directly.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          &copy; <span id="year"></span> &middot; Domain portfolio listing. All transactions
+          handled via <a href="https://www.escrow.com/domains" target="_blank" rel="noopener">Escrow.com</a>.
+        </p>
+        <p class="footer-meta">No broker &middot; No commission &middot; Direct sale</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // 24-hour rolling countdown from page load
+      (function () {
+        var end = Date.now() + 24 * 60 * 60 * 1000;
+        var el = document.getElementById('sale-countdown');
+        if (!el) return;
+        function tick() {
+          var ms = Math.max(0, end - Date.now());
+          var h = Math.floor(ms / 3600000);
+          var m = Math.floor((ms % 3600000) / 60000);
+          var s = Math.floor((ms % 60000) / 1000);
+          el.textContent =
+            String(h).padStart(2, '0') + ':' +
+            String(m).padStart(2, '0') + ':' +
+            String(s).padStart(2, '0');
+          if (ms > 0) setTimeout(tick, 1000);
+        }
+        tick();
+      })();
+    </script>
+  </body>
+</html>
