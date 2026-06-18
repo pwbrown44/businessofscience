@@ -332,23 +332,24 @@ p { margin: 0; }
   align-items: center;
   justify-content: space-between;
   gap: var(--s5);
-  margin-top: var(--s5);
+  margin-bottom: var(--s6);
   padding: var(--s5) var(--s6);
-  background: var(--ink);
+  background: #0ea5e9;
   color: #fff;
   border-radius: var(--radius-lg);
   flex-wrap: wrap;
 }
 .portfolio-total-left { flex: 1; min-width: 0; }
-.portfolio-total .bundle-label { color: rgba(255,255,255,0.6); margin-bottom: var(--s2); }
-.portfolio-total-note { font-size: var(--text-sm); color: rgba(255,255,255,0.85); line-height: 1.4; }
-.portfolio-total .btn-primary {
+.portfolio-total .bundle-label { color: rgba(255,255,255,0.75); margin-bottom: var(--s2); }
+.portfolio-total-note { font-size: var(--text-sm); color: rgba(255,255,255,0.9); line-height: 1.4; }
+.portfolio-total-btn {
   background: #fff;
-  color: var(--ink);
+  color: #0369a1;
   border-color: #fff;
   white-space: nowrap;
+  font-weight: 700;
 }
-.portfolio-total .btn-primary:hover { background: var(--bos-soft); border-color: var(--bos-soft); color: var(--bos-dark); }
+.portfolio-total-btn:hover { background: #e0f2fe; border-color: #e0f2fe; color: #0369a1; }
 
 /* ---------- Process ---------- */
 .process {
